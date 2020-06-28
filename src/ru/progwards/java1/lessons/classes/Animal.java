@@ -33,6 +33,7 @@ public class Animal {
     public static void main(String[] args) {
         Animal cow1=new Animal(50.0);
         System.out.println(cow1);
+
     }
 }
 
