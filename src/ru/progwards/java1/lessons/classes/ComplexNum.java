@@ -55,8 +55,8 @@ public class ComplexNum {
         int resA1, resB1;
         ComplexNum complexNum1 = new ComplexNum(this.a, this.b);
         ComplexNum complexNum2 = new ComplexNum(num.a, num.b);
-        resA1 = complexNum1.a * complexNum2.a - complexNum1.b*complexNum2.b; // вычисление действительной части при делении
-        resB1 = complexNum1.b * complexNum2.a + complexNum1.a*complexNum2.b; // вычисление мнимой части при делении
+        resA1 = (complexNum1.a * complexNum2.a + complexNum1.b*complexNum2.b)/(complexNum2.a*complexNum2.a+complexNum2.b*complexNum2.b); // вычисление действительной части при делении
+        resB1 = (complexNum1.b * complexNum2.a - complexNum1.a*complexNum2.b)/(complexNum2.a*complexNum2.a+complexNum2.b*complexNum2.b); // вычисление мнимой части при делении
         ComplexNum resDiv = new ComplexNum(resA1, resB1);
         return resDiv;
     }
