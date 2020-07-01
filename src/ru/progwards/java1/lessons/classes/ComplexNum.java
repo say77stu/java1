@@ -14,7 +14,7 @@ public class ComplexNum {
     public String toString(){
         this.a=a;
         this.b=b;
-        return a+"+"+b+"*i";
+        return a+"+"+b+"i";
     }
    public ComplexNum add(ComplexNum num){
      //    сложение комплексных чисел по формуле: (a + bi) + (c + di) = (a + c) + (b + d)i;
